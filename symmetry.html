@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>symmetry</title>
+</head>
+<body>
+<input id="input" type="text">
+<button onclick="alert(isPalindrome(document.getElementById('input').value))">Check</button>
+<script>
+
+    function isPalindrome(a) {
+        for (i = 0; i < a.length / 2; i++) {
+            if (a[i] !== a[a.length - 1 - i]) {
+                return false;
+
+            }
+        }
+        return true;
+    }
+</script>
+</body>
+</html>
